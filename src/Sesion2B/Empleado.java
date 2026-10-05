@@ -15,13 +15,11 @@ public class Empleado {
 			salarioB = 2500;
 		}
 
-		if (ventasMes > 1500) {
+		if (ventasMes >= 1500) {
 			salarioB = salarioB + 200;
-		} else if (ventasMes > 1000) {
+		} else if (ventasMes >= 1000) {
 			salarioB = salarioB + 100;
-		} else {
-			salarioB = salarioB;
-		}
+		} 
 
 		if (horasExtra != 0) {
 			salarioB = salarioB + (horasExtra * 30);
@@ -32,9 +30,9 @@ public class Empleado {
 	}
 
 	public float calculoNominaNeta(float nominaBruta) {
-		 if(nominaBruta>2100)
+		 if(nominaBruta>=2100)
 		 {
-			 if(nominaBruta>2500)
+			 if(nominaBruta>=2500)
 			 {
 				 return nominaBruta*(1-18);
 			 }
