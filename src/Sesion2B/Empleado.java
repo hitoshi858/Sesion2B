@@ -7,7 +7,7 @@ public class Empleado {
 
 	}
 
-	 public  float calculoNominaBruta(TipoEmpleado tipo, float ventasMes, float horasExtra) {
+	 public float calculoNominaBruta(TipoEmpleado tipo, float ventasMes, float horasExtra) {
 		float salarioB;
 		if (tipo == TipoEmpleado.vendedor) {
 			salarioB = 2000;
