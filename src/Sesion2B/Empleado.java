@@ -30,14 +30,14 @@ public class Empleado {
 	}
 
 	public float calculoNominaNeta(float nominaBruta) {
-		 if(nominaBruta>=2100)
+		 if(nominaBruta>2100)
 		 {
 			 if(nominaBruta>=2500)
 			 {
-				 return nominaBruta*(1-18);
+				 return (float) (nominaBruta*(1-0.18));
 			 }
 			 else
-				 return nominaBruta*(1-15);
+				 return (float) (nominaBruta*(1-0.15));
 		 }
 		 else
 			 return nominaBruta;
